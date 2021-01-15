@@ -16,10 +16,10 @@ html, body {
 	width: auto;
 	height: 100%;
 	box-sizing: border-box;
-	overflow: hidden;
+	overflow: visible;
 }
 body {
-	background-image: url("../image/memphis-colorful.png");
+	background-image: url("../../image/blue-snow.png");
 	display: flex;
 	flex-direction: column;
 	transition: 0.3s;
@@ -30,13 +30,17 @@ body {
 .head-logo img {
 	text-align: center;	
 	min-width: auto;
-	max-width: 30em;
-	opacity: 0.7;
+	max-width: 40em;
+	opacity: 1;
 	display: flex;
 	margin-top: 5em;
 	margin-left: auto;
 	margin-right: auto;	
 	transition: 0.3s;
+}
+.about .tagline em {
+	font-weight: bolder;
+	color: #c976bf;
 }
 .head-logo img:hover {
 	transform: scale(1.03);
@@ -87,16 +91,22 @@ body {
 	font-size: 1.7em;
 }
 .nav-item i:hover {
-	transform: scale(1.35) rotate(0.02deg);
 	transition: 0.4s;
 	cursor: pointer;	
-	will-change: transform;	
 }
 .main-content {
+	margin-top: 5em;
 	flex: 1 0 auto;
 	max-height: auto;
 	padding: 0 1em 0 1em;
+	text-align: center;
 }
+.body-svg img{
+	min-width: auto;
+	max-width: 40em;
+	transition: 0.3s;	
+}
+
 .foot-logo{
 	letter-spacing: 1px;
 	text-align: center;
@@ -113,8 +123,17 @@ body {
 
 @media screen and (max-width: 1000px) , screen and (max-height: 600px) {
 	.head-logo img {
-		max-width: 20em;
-	}	
+		max-width: 10em;
+	}
+	.body-svg img {
+		max-width: 15em;
+	}
+	.main-content {
+		margin-top: 2em;
+	}
+	.foot-logo{
+		font-size: 0.48em;
+	}
 	.nav-sidebar {	
 		display: none;
 	}
