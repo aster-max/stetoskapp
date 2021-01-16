@@ -1,4 +1,7 @@
 #!/bin/bash
+#-----------------------------------------------------------------------------
+# INIT : create a placecounter for every incoming connection (new/established)
+#-----------------------------------------------------------------------------
 touch counter
 path_db="../../database/"
 get_ctr=$(cat counter)
@@ -9,15 +12,8 @@ then
 fi
 ##
 case $1 in
-	"ip")
-		echo -n "$ip"
-		;;
-	"sm")
-		echo -n "$sm"
-		;;
 	"ctr")
 		get_ctr=$((++get_ctr))
-		echo "$get_ctr"
 		echo "$get_ctr" > counter
 		;;
 

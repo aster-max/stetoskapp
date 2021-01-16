@@ -31,7 +31,7 @@ body {
 	text-align: center;	
 	min-width: auto;
 	max-width: 40em;
-	opacity: 1;
+	opacity: 0.75;
 	display: flex;
 	margin-top: 5em;
 	margin-left: auto;
@@ -43,7 +43,6 @@ body {
 	color: #c976bf;
 }
 .head-logo img:hover {
-	transform: scale(1.03);
 	opacity: 1;
 	cursor: pointer;
 }
