@@ -1,6 +1,9 @@
 <?php
 	header("Content-type: text/css; charset: UTF-8");
 ?>
+html {
+	scroll-behavior: smooth; !important;
+}
 :root {
 	color: #289E92;
 	font-family: Ubuntu, sans-serif;
@@ -22,7 +25,7 @@ body {
 	background-image: url("../../image/blue-snow.png");
 	display: flex;
 	flex-direction: column;
-	transition: 0.3s;
+	transition: 0.4s;
 	min-height: 100%;
 	margin: 0 auto -50px;
 	overflow: auto;
@@ -31,7 +34,7 @@ body {
 	text-align: center;	
 	min-width: auto;
 	max-width: 40em;
-	opacity: 0.75;
+	opacity: 1;
 	display: flex;
 	margin-top: 5em;
 	margin-left: auto;
@@ -99,11 +102,61 @@ body {
 	max-height: auto;
 	padding: 0 1em 0 1em;
 	text-align: center;
+	transition: 0.4s;
 }
-.body-svg img{
+.main-content p {
+	margin-top: 0;
+	font-size: 1em;
+	color: #6ba591;
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+}
+.main-content a {
+	text-decoration: none;
+}
+.main-content h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 2.2em;
+}
+.main-content .focused {
+	color: #6A85D5;
+}
+.body-svg {
+	padding-bottom: 1em;
+}
+.body-svg img {
 	min-width: auto;
 	max-width: 40em;
-	transition: 0.3s;	
+	transition: 0.3s;
+	opacity: 1;
+}
+.body-atm-svg {
+	text-align: center;
+}
+.body-atm-svg path {
+	transition: 0.3s;
+}
+.body-atm-svg .valid path:hover {
+	opacity: 1;
+	fill: #8fd3b7;
+	cursor: pointer;
+}
+.body-atm-svg img {
+	opacity: 1;
+	min-width: auto;
+	max-width: 10em;
+}
+.body-trans {
+	padding: 4em 0 4em 0;
+}
+.body-trans img {
+	max-width: 2em;
+	opacity: 0.5;
+	transition: 0.3s;
+}
+.body-text {
+	padding: 0 10vw 0 10vw;
 }
 
 .foot-logo{
@@ -127,9 +180,24 @@ body {
 	.body-svg img {
 		max-width: 15em;
 	}
+	.body-atm-svg img {
+		max-width: 10em;
+	}
+	.body-trans {
+		padding: 1em 0 1em 0;
+	}	
+	.body-trans img {
+		max-width: 1em;
+	}
 	.main-content {
 		margin-top: 2em;
 	}
+	.main-content p {
+		font-size: 0.5em;
+	}
+	.main-content h2 {
+		font-size: 0.7em;
+	}	
 	.foot-logo{
 		font-size: 0.48em;
 	}
