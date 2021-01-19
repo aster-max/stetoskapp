@@ -133,13 +133,14 @@ body {
 }
 .body-atm-svg {
 	text-align: center;
+	padding-bottom: 1em;
 }
 .body-atm-svg path {
 	transition: 0.3s;
 }
 .body-atm-svg .valid path:hover {
 	opacity: 1;
-	fill: #8fd3b7;
+	fill: #88c9b2;
 	cursor: pointer;
 }
 .body-atm-svg img {
